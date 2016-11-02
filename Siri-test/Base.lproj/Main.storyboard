@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,26 +18,29 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What can I do for you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKR-I5-Jhc">
-                                <rect key="frame" x="72.5" y="100" width="230" height="27.5"/>
+                            <label verifyAmbiguity="ignoreSizes" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What can I do for you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKR-I5-Jhc">
+                                <rect key="frame" x="169" y="40" width="230" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is the UITextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yfa-gf-lGW">
-                                <rect key="frame" x="30" y="157.5" width="315" height="200"/>
+                                <rect key="frame" x="30" y="97.5" width="508" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Zgg-wx-mPb"/>
+                                    <constraint firstAttribute="height" constant="200" id="Zgg-wx-mPb">
+                                        <variation key="widthClass=compact" constant="150"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="150"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDZ-2X-mpK">
-                                <rect key="frame" x="133.5" y="417.5" width="108" height="30"/>
+                                <rect key="frame" x="230" y="287.5" width="108" height="30"/>
                                 <state key="normal" title="Start Recording"/>
                                 <connections>
                                     <action selector="microPhoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOE-jU-pRr"/>
@@ -46,12 +49,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="BKR-I5-Jhc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="0lv-UU-k7R"/>
+                            <constraint firstItem="BKR-I5-Jhc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="0lv-UU-k7R">
+                                <variation key="widthClass=compact" constant="20"/>
+                                <variation key="widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="Yfa-gf-lGW" secondAttribute="trailing" constant="30" id="547-Xi-Vug"/>
                             <constraint firstItem="Yfa-gf-lGW" firstAttribute="top" secondItem="BKR-I5-Jhc" secondAttribute="bottom" constant="30" id="O4N-kY-YGQ"/>
                             <constraint firstItem="dDZ-2X-mpK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dOj-iW-HP9"/>
                             <constraint firstItem="Yfa-gf-lGW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="hPd-lj-a2G"/>
-                            <constraint firstItem="dDZ-2X-mpK" firstAttribute="top" secondItem="Yfa-gf-lGW" secondAttribute="bottom" constant="60" id="jo5-1d-LFj"/>
+                            <constraint firstItem="dDZ-2X-mpK" firstAttribute="top" secondItem="Yfa-gf-lGW" secondAttribute="bottom" constant="40" id="jo5-1d-LFj"/>
                             <constraint firstItem="BKR-I5-Jhc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKI-lx-a5g"/>
                         </constraints>
                     </view>
