@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					60ED032D1DC9D3DF00C2E0D0 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 94W382AB54;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94W382AB54;
 				INFOPLIST_FILE = "Siri-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oahgnehzoul.Siri-test";
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94W382AB54;
 				INFOPLIST_FILE = "Siri-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oahgnehzoul.Siri-test";
